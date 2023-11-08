@@ -13,20 +13,18 @@
 
 <body>
     <div class="container">
-        <div class="col-10">
-
+        <div class="col-10 col-lg-7">
+            
             <div class="row">
                 <h1 class="display-2">Subscribe to <br> Our Newsletter!</h1>
                 <h3>Don't think, just do it!</h3>
                 <p class="text-muted col-12">We'll use the following information to deliver only the news you're
-                    interested in.
-                    We <em>totally</em> won't sell it to the highest bidder or use it to help our partners in crime
-                    build
-                    up their profile on you. Besides, even if we did do that, what's the problem there? Don't you want
-                    to
-                    be targeted by highly specific ads? They're better than general ads, right?
+                    interested in. We <em>totally</em> won't sell it to the highest bidder or use it to help our
+                    partners in crime build up their profile on you. Besides, even if we did do that, what's the problem
+                    there? Don't you want to be targeted by highly specific ads? They're better than general ads, right?
                 </p>
             </div>
+            <a class="btn btn-secondary mb-3" href="#newsletterForm" onclick="loadDefaultValues()">load default options</a>
             <form id="newsletterForm" class="row g-3">
                 <div class="col-md-6 col-12">
                     <label class="form-check-label" for="firstName">First Name:</label>
@@ -63,10 +61,12 @@
                     <label class="form-check-label" for="email">Email:</label>
                     <input type="email" class="form-control" id="email" placeholder="Email Address" required>
                 </div>
+                <br><br><br><br>
                 <div class="col-12">
                     <textarea class="form-control" id="additionalInfo" placeholder="Additional Information"></textarea>
                 </div>
                 <div class="col-12">
+                    <hr>
                     <div class="form-check">
                         <input class="form-check-input" type="checkbox" id="receivePaperNewsletter"
                             name="receivePaperNewsletter">
@@ -86,7 +86,7 @@
                     <div class="col-md-4">
                         <label for="state">State:</label>
                         <select id="state" class="form-control">
-                            <option value="">Select State</option>
+                            <option value="" disabled selected>Select State</option>
                         </select>
                     </div>
                     <div class="col-md-4">
@@ -95,8 +95,10 @@
                     </div>
                 </div>
                 <div class="col-12">
+                    <hr>
                     <button type="submit" class="btn btn-primary">Subscribe</button>
                 </div>
+                <div class="row my-4"></div>
             </form>
         </div>
     </div>

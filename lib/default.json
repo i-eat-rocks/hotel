@@ -1,0 +1,14 @@
+{
+    "firstName": "Joe",
+    "lastName": "Mama",
+    "birthdate": "1970-01-01",
+    "gender": "Male",
+    "honorific": "Mr.",
+    "email": "goober@una.edu",
+    "additionalInfo": "",
+    "receivePaperNewsletter": true,
+    "address":"One Harrison Plaza",
+    "city": "Florence",
+    "state": "AL",
+    "zip": "35632"
+}
